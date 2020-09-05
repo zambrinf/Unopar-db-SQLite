@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('sisvendas.db')
+conn = sqlite3.connect('sisvendas.db')  # Como o banco já está criado, só vai se conectar a ele
 
 cursor = conn.cursor()
 
