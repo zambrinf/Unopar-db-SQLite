@@ -7,6 +7,6 @@ DML-insercao.py  --> insere os dados nas tabelas
 
 DQL-consulta.py --> gera uma consulta e a exibe na tela
 
-Original-ForumSistemaVendas.sql --> arquivo original no formato .sql
+Original-ForumSistemaVendas.sql --> arquivo original no formato .sql utilizado no forum da outra matéria
 
 sisvendas.db  --> o arquivo contendo o banco de dados criado pelo script de DDL-criacao
