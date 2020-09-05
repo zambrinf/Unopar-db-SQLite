@@ -1,8 +1,8 @@
-import sqlite3 #importa biblioteca do SQLite
+import sqlite3
 
-conn = sqlite3.connect('sisvendas.db') #cria um banco de dados
+conn = sqlite3.connect('sisvendas.db')
 
-cursor = conn.cursor() #cria o cursor que vai executar os comandos sql
+cursor = conn.cursor()
 
 cursor.execute("""
 INSERT INTO cliente(nome_cliente,cidade_cliente,atividade_cliente)

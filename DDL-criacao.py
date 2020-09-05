@@ -1,8 +1,11 @@
-import sqlite3 #importa biblioteca do SQLite
+import sqlite3  # importa biblioteca do SQLite
 
-conn = sqlite3.connect('sisvendas.db') #cria um banco de dados
+conn = sqlite3.connect('sisvendas.db')  # cria um banco de dados
 
 cursor = conn.cursor() #cria o cursor que vai executar os comandos sql
+
+# Algumas mudanças no primary key para se adequar ao SQLite
+# não há o tipo "ENUM" também
 
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS cliente (
@@ -42,4 +45,5 @@ CREATE TABLE IF NOT EXISTS vendas (
         ON UPDATE CASCADE ON DELETE RESTRICT
 );
 """)
-conn.commit()
+
+conn.commit()  # esse commit funciona como se fosse o commit do SQL mesmo, vai salvar os dados no BD

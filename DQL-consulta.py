@@ -4,7 +4,7 @@ conn = sqlite3.connect('sisvendas.db')
 
 cursor = conn.cursor()
 
-#STRFTIME é uma função do SQLite que retira o ano, ou mês, ou dia de uma data.
+#STRFTIME é uma função do SQLite que retira o ano, ou mês, ou dia de uma data
 cursor.execute("""
 SELECT
 c.cidade_cliente,
@@ -30,7 +30,7 @@ ano,
 mes
 """)
 
-results = cursor.fetchall()
+results = cursor.fetchall()  # associa à variável results o resultado obtido pela função SELECT acima
 
 for i in results:
     print(i)
